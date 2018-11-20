@@ -125,5 +125,5 @@ public class TimeEntryControllerTest {
         ResponseEntity response = controller.delete(timeEntryId);
         verify(timeEntryRepository).delete(timeEntryId);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NO_CONTENT);
-    }
+}
 }
