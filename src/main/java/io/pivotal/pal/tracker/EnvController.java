@@ -28,10 +28,10 @@ public class EnvController {
     @GetMapping("/env")
     public Map<String, String> getEnv() {
         Map<String, String> envMap = new HashMap<>();
-        envMap.put(this.port,this.port);
-        envMap.put(this.memoryLimit,this.memoryLimit);
-        envMap.put(this.index,this.index);
-        envMap.put(this.address,this.address);
+        envMap.put("PORT",this.port);
+        envMap.put("MEMORY_LIMIT",this.memoryLimit);
+        envMap.put("CF_INSTANCE_INDEX",this.index);
+        envMap.put("CF_INSTANCE_ADDR",this.address);
 
         return envMap;
     }
